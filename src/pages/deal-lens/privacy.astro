@@ -1,0 +1,142 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Privacy Policy — Deal Lens">
+  <h1>Deal Lens Privacy Policy</h1>
+  <p class="muted">Last updated: April 11, 2026</p>
+
+  <p>
+    Deal Lens is a Chrome extension published by Walensis that analyzes resale
+    listings on Facebook Marketplace, eBay, and Reverb to estimate fair market
+    value and identify good deals. This policy explains what data Deal Lens
+    collects, how it's used, and your rights. For the company-level policy,
+    see the <a href="/privacy">Walensis privacy policy</a>.
+  </p>
+
+  <h2>Data we collect</h2>
+
+  <h3>From listing pages you view</h3>
+  <p>
+    When you click to analyze a listing, the extension extracts the following
+    from the page you're viewing:
+  </p>
+  <ul>
+    <li>Listing title, price, and condition</li>
+    <li>Listing description (when present)</li>
+    <li>Up to 5 listing photos</li>
+    <li>Listing URL and platform (Facebook Marketplace, eBay, or Reverb)</li>
+    <li>Item category (when present)</li>
+  </ul>
+
+  <p>Deal Lens does <strong>not</strong> extract or collect:</p>
+  <ul>
+    <li>Your browsing history</li>
+    <li>Pages or listings you don't explicitly analyze</li>
+    <li>Personal data from the listing page (seller names, profiles, messages)</li>
+    <li>Anything outside the listing you're actively viewing</li>
+  </ul>
+
+  <h3>From your account</h3>
+  <ul>
+    <li>Your email address (via Google sign-in)</li>
+    <li>A unique API key we generate for your account</li>
+    <li>Usage counts (number of analyses per day) for rate limiting</li>
+  </ul>
+
+  <h2>How we use your data</h2>
+  <p>
+    When you analyze a listing, the listing data is sent to our API and used to:
+  </p>
+  <ul>
+    <li>Identify the product using AI analysis of the title, description, and photos</li>
+    <li>Search eBay and Reverb for comparable listings</li>
+    <li>Calculate an estimated fair market value</li>
+    <li>Return the analysis to your browser</li>
+  </ul>
+  <p>
+    Listing data is processed <strong>in memory only</strong> and is not stored
+    in a database. We do not log, retain, or share the contents of listings you
+    analyze.
+  </p>
+  <p>
+    Your email and API key are stored to authenticate requests, enforce usage
+    limits, and let you sign back in.
+  </p>
+
+  <h2>Third parties we share data with</h2>
+  <p>To provide the analysis, listing data is sent to:</p>
+  <ul>
+    <li>
+      <strong>Anthropic</strong> (Claude AI) — listing title, description,
+      photos, and search results are sent to Claude for product identification
+      and analysis. Anthropic does not train its models on data sent through
+      their API. See
+      <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.
+    </li>
+    <li>
+      <strong>eBay</strong> — listing titles are used to query eBay's Browse
+      API for comparable listings.
+    </li>
+    <li>
+      <strong>Reverb</strong> — listing titles are used to query Reverb's
+      GraphQL API for comparable music gear listings.
+    </li>
+  </ul>
+
+  <p>For account management, we use:</p>
+  <ul>
+    <li>
+      <strong>Supabase</strong> — handles authentication (Google sign-in) and
+      stores your account record. See
+      <a href="https://supabase.com/privacy">Supabase's privacy policy</a>.
+    </li>
+    <li>
+      <strong>Google Sign-In</strong> — used only to verify your email address.
+      We do not request access to your Google account, contacts, calendar, or
+      any other Google data.
+    </li>
+  </ul>
+
+  <p>
+    We do <strong>not</strong> sell data, share data with advertisers, or use
+    any analytics or tracking services.
+  </p>
+
+  <h2>Data retention</h2>
+  <ul>
+    <li><strong>Listing data:</strong> not retained. Processed in memory and discarded.</li>
+    <li><strong>Account data:</strong> retained until you delete your account.</li>
+    <li><strong>Usage counts:</strong> retained for 30 days for rate limiting purposes.</li>
+  </ul>
+
+  <h2>Your rights</h2>
+  <p>You can:</p>
+  <ul>
+    <li><strong>Delete your account</strong> by signing in and clicking "Delete account" in settings, or by emailing us</li>
+    <li><strong>Request a copy</strong> of any data associated with your account</li>
+    <li><strong>Stop using Deal Lens</strong> at any time by uninstalling the extension</li>
+  </ul>
+  <p>
+    To exercise any of these rights, email
+    <a href="mailto:privacy@walensis.com">privacy@walensis.com</a>.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Deal Lens is not intended for users under 13, and we do not knowingly
+    collect data from children.
+  </p>
+
+  <h2>Changes to this policy</h2>
+  <p>
+    If we make material changes to this policy, we will update the "Last
+    updated" date and notify users via the extension on next launch.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy? Email
+    <a href="mailto:privacy@walensis.com">privacy@walensis.com</a>.
+  </p>
+</Layout>

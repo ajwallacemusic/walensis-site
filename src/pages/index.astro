@@ -1,15 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// TODO: replace with Chrome Web Store listing URL once Deal Lens is published.
+const chromeWebStoreUrl = '#';
 ---
 
-<Layout title="Walensis — Know what it's worth">
+<Layout
+  title="Deal Lens — Know what it's worth"
+  description="Deal Lens is a Chrome extension that analyzes resale listings on Facebook Marketplace, eBay, and Reverb to estimate fair market value and spot real deals."
+>
   <section class="hero">
-    <h1>Know what it's worth.</h1>
+    <h1>Deal Lens</h1>
     <p>
-      Walensis analyzes resale listings on Facebook Marketplace, eBay, and Reverb
-      so you can spot fair prices and find real deals — instantly, in your browser.
+      Know what it's worth. Deal Lens analyzes resale listings on Facebook
+      Marketplace, eBay, and Reverb so you can spot fair prices and find real
+      deals — instantly, in your browser.
     </p>
-    <a href="#" class="btn">Get the Chrome Extension</a>
+    <a href={chromeWebStoreUrl} class="btn">Get Deal Lens for Chrome</a>
+    <p class="muted" style="margin-top: 1.25rem;">A Walensis product.</p>
   </section>
 
   <section class="features">
