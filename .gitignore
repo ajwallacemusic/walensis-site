@@ -24,3 +24,9 @@ pnpm-debug.log*
 
 # superpowers brainstorm artifacts
 .superpowers/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
