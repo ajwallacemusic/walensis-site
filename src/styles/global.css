@@ -114,7 +114,7 @@ code {
 /* Header */
 .site-header {
   border-bottom: 1px solid var(--color-border);
-  background: var(--color-surface);
+  background: var(--color-bg);
 }
 
 .site-header-inner {
@@ -143,7 +143,7 @@ code {
 }
 
 .site-nav a {
-  color: var(--color-text-muted);
+  color: var(--color-text-tertiary);
   font-size: 0.95rem;
 }
 
@@ -160,10 +160,10 @@ code {
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--color-border);
-  background: var(--color-surface);
+  background: var(--color-bg);
   padding: 2rem 1.5rem;
   text-align: center;
-  color: var(--color-text-muted);
+  color: var(--color-text-tertiary);
   font-size: 0.9rem;
 }
 
