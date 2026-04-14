@@ -177,15 +177,29 @@ code {
 /* Hero (landing page) */
 .hero {
   text-align: center;
-  padding: 2rem 0 3rem;
+  padding: 3rem 0 2rem;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--color-text-tertiary);
+  padding: 0.35rem 1rem;
+  border-radius: 99px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-  font-size: 2.75rem;
+  font-size: 3.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
-.hero p {
+.hero-sub {
   font-size: 1.15rem;
   color: var(--color-text-muted);
   max-width: 540px;
@@ -196,10 +210,10 @@ code {
   display: inline-block;
   background: var(--color-accent);
   color: #fff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 6px;
+  padding: 0.85rem 2rem;
+  border-radius: 8px;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.05rem;
   transition: background 0.15s;
 }
 
@@ -209,10 +223,164 @@ code {
   text-decoration: none;
 }
 
+/* Browser mockup */
+.browser-mockup {
+  max-width: 600px;
+  margin: 2.5rem auto 0;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  background: #0f0e2a;
+  text-align: left;
+}
+
+.browser-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.browser-dots {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.browser-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.browser-url {
+  font-size: 0.7rem;
+  color: var(--color-text-tertiary);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  flex: 1;
+}
+
+.browser-body {
+  display: flex;
+  min-height: 200px;
+}
+
+.listing-side {
+  flex: 1;
+  padding: 1rem;
+  border-right: 1px solid var(--color-border);
+}
+
+.listing-image {
+  width: 100%;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  margin-bottom: 0.75rem;
+}
+
+.listing-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-bottom: 0.25rem;
+}
+
+.listing-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.panel-side {
+  width: 200px;
+  padding: 0.75rem;
+  background: rgba(99, 102, 241, 0.08);
+}
+
+.panel-header {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.panel-verdict {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.verdict-good {
+  background: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+.panel-label {
+  font-size: 0.6rem;
+  color: var(--color-text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.25rem;
+  margin-top: 0.5rem;
+}
+
+.panel-value {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.panel-comp {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Stats bar */
+.stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--color-accent-hover);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--color-text-tertiary);
+  margin-top: 0.15rem;
+}
+
+/* Feature cards */
 .features {
   display: grid;
-  gap: 1.5rem;
-  margin-top: 3rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
 }
 
 .feature {
@@ -224,9 +392,11 @@ code {
 
 .feature h3 {
   margin-top: 0;
+  color: var(--color-text);
 }
 
 .feature p {
   margin-bottom: 0;
   color: var(--color-text-muted);
+  font-size: 0.95rem;
 }

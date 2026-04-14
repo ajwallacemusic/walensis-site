@@ -5,19 +5,66 @@ const chromeWebStoreUrl = 'https://chromewebstore.google.com/detail/deal-lens/nd
 ---
 
 <Layout
-  title="Deal Lens — Know what your gear is worth"
-  description="Deal Lens is the deal checker for enthusiast gear — music, cameras, golf. AI analysis for Facebook Marketplace, eBay, and Reverb listings."
+  title="Deal Lens — Stop overpaying for used gear"
+  description="AI-powered price analysis for enthusiast gear on Facebook Marketplace, eBay, and Reverb. Music, cameras, golf — know what it's worth before you buy."
 >
   <section class="hero">
-    <h1>Deal Lens</h1>
-    <p>
-      <strong>Know what your gear is worth.</strong> Deal Lens is the deal
-      checker for enthusiast gear. AI analysis for resale listings on Facebook
-      Marketplace, eBay, and Reverb — music, cameras, golf, and every corner
-      of the used gear market.
+    <span class="badge">The deal checker for enthusiast gear</span>
+    <h1>Stop overpaying<br>for used gear.</h1>
+    <p class="hero-sub">
+      AI-powered price analysis on Facebook Marketplace, eBay, and Reverb.
     </p>
-    <a href={chromeWebStoreUrl} class="btn">Get Deal Lens for Chrome</a>
-    <p class="muted" style="margin-top: 1.25rem;">A Walensis product.</p>
+    <a href={chromeWebStoreUrl} class="btn">Add to Chrome — Free</a>
+
+    <div class="browser-mockup">
+      <div class="browser-bar">
+        <div class="browser-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="browser-url">facebook.com/marketplace/item/...</div>
+      </div>
+      <div class="browser-body">
+        <div class="listing-side">
+          <div class="listing-image"></div>
+          <div class="listing-title">Fender Jazz Bass MIJ 1994</div>
+          <div class="listing-price">$680</div>
+        </div>
+        <div class="panel-side">
+          <div class="panel-header">Deal Lens</div>
+          <div class="panel-verdict verdict-good">Good Deal</div>
+          <div class="panel-label">Estimated value</div>
+          <div class="panel-value">$750 – $850</div>
+          <div class="panel-label">Comparable sales</div>
+          <div class="panel-comp">
+            <span>Fender Jazz MIJ '93 — Reverb</span>
+            <span>$810</span>
+          </div>
+          <div class="panel-comp">
+            <span>Fender Jazz MIJ '95 — eBay</span>
+            <span>$775</span>
+          </div>
+          <div class="panel-comp">
+            <span>Fender Jazz Bass CIJ — Reverb</span>
+            <span>$720</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="stat">
+      <div class="stat-value">3</div>
+      <div class="stat-label">Platforms</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">AI</div>
+      <div class="stat-label">Powered</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">Real</div>
+      <div class="stat-label">Sold Comps</div>
+    </div>
   </section>
 
   <section class="features">
