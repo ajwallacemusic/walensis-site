@@ -192,11 +192,18 @@ code {
 }
 
 .hero h1 {
-  font-size: 3.25rem;
+  font-size: 3.75rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   line-height: 1.1;
+}
+
+.hero-tagline {
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  font-weight: 400;
+  margin: 0 auto 1.75rem;
 }
 
 .hero-sub {
