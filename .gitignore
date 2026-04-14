@@ -21,3 +21,6 @@ pnpm-debug.log*
 # editors
 .vscode/
 .idea/
+
+# superpowers brainstorm artifacts
+.superpowers/
