@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 920px;
+    height: 680px;
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4f46e5 100%);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+    padding: 3.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .top { flex: 1; }
+  .headline {
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin-bottom: 0.75rem;
+  }
+  .subtext {
+    font-size: 1.15rem;
+    color: #c7d2fe;
+    margin-bottom: 2rem;
+  }
+  .mockup {
+    background: #0f0e2a;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    max-width: 700px;
+  }
+  .mock-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    background: rgba(255,255,255,0.05);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .dots { display: flex; gap: 0.3rem; }
+  .dots span {
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.15);
+  }
+  .mock-url {
+    font-size: 0.65rem;
+    color: #a5b4fc;
+    background: rgba(255,255,255,0.05);
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    flex: 1;
+  }
+  .mock-body {
+    display: flex;
+    min-height: 220px;
+  }
+  .mock-listing {
+    flex: 1;
+    padding: 1rem;
+    border-right: 1px solid rgba(255,255,255,0.1);
+  }
+  .mock-img {
+    width: 100%;
+    height: 100px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 6px;
+    margin-bottom: 0.6rem;
+  }
+  .mock-title {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+  }
+  .mock-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+  .mock-panel {
+    width: 200px;
+    padding: 0.75rem;
+    background: rgba(99,102,241,0.08);
+  }
+  .mock-panel-hdr {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #6366f1;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+  }
+  .mock-verdict {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: rgba(34,197,94,0.2);
+    color: #4ade80;
+    margin-bottom: 0.6rem;
+  }
+  .mock-lbl {
+    font-size: 0.55rem;
+    color: #a5b4fc;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 0.15rem;
+    margin-top: 0.4rem;
+  }
+  .mock-val {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .mock-comp {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.6rem;
+    color: #c7d2fe;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .pill {
+    padding: 0.35rem 0.85rem;
+    border-radius: 99px;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .pill-platform {
+    background: rgba(255,255,255,0.1);
+    color: #c7d2fe;
+  }
+  .pill-category {
+    background: rgba(99,102,241,0.2);
+    color: #a5b4fc;
+  }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="headline">Stop overpaying<br>for used gear.</div>
+    <div class="subtext">AI-powered price analysis for enthusiast gear</div>
+    <div class="mockup">
+      <div class="mock-bar">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="mock-url">facebook.com/marketplace/item/...</div>
+      </div>
+      <div class="mock-body">
+        <div class="mock-listing">
+          <div class="mock-img"></div>
+          <div class="mock-title">Fender Jazz Bass MIJ 1994</div>
+          <div class="mock-price">$680</div>
+        </div>
+        <div class="mock-panel">
+          <div class="mock-panel-hdr">Deal Lens</div>
+          <div class="mock-verdict">Good Deal</div>
+          <div class="mock-lbl">Estimated value</div>
+          <div class="mock-val">$750 – $850</div>
+          <div class="mock-lbl">Comparable sales</div>
+          <div class="mock-comp"><span>Fender Jazz MIJ '93 — Reverb</span><span>$810</span></div>
+          <div class="mock-comp"><span>Fender Jazz MIJ '95 — eBay</span><span>$775</span></div>
+          <div class="mock-comp"><span>Fender Jazz CIJ — Reverb</span><span>$720</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <span class="pill pill-platform">Facebook Marketplace</span>
+    <span class="pill pill-platform">eBay</span>
+    <span class="pill pill-platform">Reverb</span>
+    <span class="pill pill-category">Music</span>
+    <span class="pill pill-category">Cameras</span>
+    <span class="pill pill-category">Golf</span>
+  </div>
+</body>
+</html>
