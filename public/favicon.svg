@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
   <!-- Handle -->
   <line x1="84" y1="84" x2="116" y2="116"
-        stroke="#0f766e" stroke-width="14" stroke-linecap="round"/>
+        stroke="#6366f1" stroke-width="14" stroke-linecap="round"/>
 
   <!-- Lens -->
-  <circle cx="52" cy="52" r="44" fill="#ffffff" stroke="#0f766e" stroke-width="10"/>
+  <circle cx="52" cy="52" r="44" fill="#ffffff" stroke="#6366f1" stroke-width="10"/>
 
   <!-- Bar chart inside lens -->
-  <rect x="32" y="58" width="10" height="14" rx="1.5" fill="#0f766e"/>
-  <rect x="47" y="48" width="10" height="24" rx="1.5" fill="#0f766e"/>
-  <rect x="62" y="38" width="10" height="34" rx="1.5" fill="#0f766e"/>
+  <rect x="32" y="58" width="10" height="14" rx="1.5" fill="#6366f1"/>
+  <rect x="47" y="48" width="10" height="24" rx="1.5" fill="#6366f1"/>
+  <rect x="62" y="38" width="10" height="34" rx="1.5" fill="#6366f1"/>
 </svg>
